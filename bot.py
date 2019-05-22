@@ -11,10 +11,10 @@ async def on_message(message):
         param, numbers = message.content.split('!RTB ')
         access = 0
         roles = []
-        roles.append(discord.utils.get(message.author.server.roles, name='Ruby Patron'))
-        roles.append(discord.utils.get(message.author.server.roles, name='Sapphire Patron'))
-        roles.append(discord.utils.get(message.author.server.roles, id='569974440620851201'))
-        roles.append(discord.utils.get(message.author.server.roles, name='OG Donator'))
+        roles.append(discord.utils.get(message.server.roles, name='Ruby Patron'))
+        roles.append(discord.utils.get(message.server.roles, name='Sapphire Patron'))
+        roles.append(discord.utils.get(message.server.roles, id='569974440620851201'))
+        roles.append(discord.utils.get(message.server.roles, name='OG Donator'))
         for i in message.author.roles:
             if i in roles:
                 access = 1
