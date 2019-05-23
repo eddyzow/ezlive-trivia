@@ -11,7 +11,7 @@ async def on_message(message):
         param, numbers = message.content.split('!RTB ')
         access = 0
         roles = []
-        serverr = client.get_server('523339797104820273')
+        serverr = client.get_guild('523339797104820273')
         roles.append(discord.utils.get(serverr.roles, name='Ruby Patron'))
         roles.append(discord.utils.get(serverr.server.roles, name='Sapphire Patron'))
         roles.append(discord.utils.get(serverr.server.roles, id='569974440620851201'))
